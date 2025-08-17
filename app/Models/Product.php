@@ -12,7 +12,7 @@ class Product extends Model
         $table->id();
         $table->string('name');
         $table->decimal('price', 8, 2);
-        $table->timestamps();       // created_at و updated_at
+        $table->timestamps();
     });
 }
 }
