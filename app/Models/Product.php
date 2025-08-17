@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+
+    protected $fillable = ['name', 'price'];
+
     public function up()
 {
     Schema::create('products', function (Blueprint $table) {
